@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 public class WebConfig implements WebMvcConfigurer {
 	public void configureViewResolvers(ViewResolverRegistry registry) {
-		registry.jsp("/WEB-INF/jsp/", ".jsp");
+		registry.jsp("/WEB-INF/jsp/", ".jsp").getClass();
 	}
 
 

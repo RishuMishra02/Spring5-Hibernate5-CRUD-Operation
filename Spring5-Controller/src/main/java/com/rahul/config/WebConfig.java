@@ -3,7 +3,7 @@ package com.rahul.config;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
+@Configuration
 public class WebConfig implements WebMvcConfigurer {
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		registry.jsp("/WEB-INF/jsp/", ".jsp").getClass();
